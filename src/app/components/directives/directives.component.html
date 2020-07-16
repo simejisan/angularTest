@@ -1,0 +1,36 @@
+<p>directives works!</p>
+<div class="ng-container">
+  Dong nay duoc bao boi
+  <ng-container *ngIf="title">
+    {{title}}
+  </ng-container>
+</div>
+<div class ="ng-if-else">
+  Còn tôi dưới đây là sử dụng directive
+  NgIf...else kết hợp vs ng template.
+  Tôi là một <ng-container *ngIf="testName">
+  với nội dung là {{testName}}
+</ng-container>
+</div>
+<input type ="text" [(ngModel)]="inputName">
+<div *ngIf="inputName == testName; then
+ tmpWhenTrue else tmpWhenFalse">
+</div>
+<ng-template #tmpWhenTrue>
+  Go Chuan roi day
+</ng-template>
+<ng-template #tmpWhenFalse>
+  GO lai di
+</ng-template>
+<!--
+NG Switch Case
+-->
+<!--
+<div [ngSwitch]="inputName">
+  <div *ngSwitchCase="testName">True</div>
+  <div *ngSwitchCase = "testName">False</div>
+</div>
+
+-->
+
+

@@ -1,0 +1,23 @@
+<p>event-handle works!</p>
+<button (click)="toggleCollape()" class = jasmine-bar>
+  Want to know some more?</button>
+<div *ngIf="!isCollapsed">
+  <p>Sunday gonna comes with great danger...</p>
+</div>
+
+  <hr>
+<div class = jasmine-empty>
+  Khi bạn thay đổi giá trị của input1 thì giá trị
+  của input2 cũng thay đổi theo, nhờ sự kiện onChange
+  của input1, nhưng khi bạn thay đổi giá trị input2
+  thì input1 không có sự ảnh hưởng
+  <br>
+
+  <strong>input1
+  <input type = "text" [value]="input1">
+  </strong>
+
+</div>
+
+
+
