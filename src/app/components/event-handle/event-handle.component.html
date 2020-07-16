@@ -1,12 +1,15 @@
 <p>event-handle works!</p>
-<button (click)="toggleCollape()" class = jasmine-bar>
-  Want to know some more?</button>
+<button (click)="toggleCollape()" class=jasmine-bar>
+  Want to know some more?
+</button>
 <div *ngIf="!isCollapsed">
   <p>Sunday gonna comes with great danger...</p>
 </div>
 
-  <hr>
-<div class = jasmine-empty>
+<button (click)="onClickMe">Click me</button>
+{{clickMessage}}
+<hr>
+<div class=jasmine-empty>
   Khi bạn thay đổi giá trị của input1 thì giá trị
   của input2 cũng thay đổi theo, nhờ sự kiện onChange
   của input1, nhưng khi bạn thay đổi giá trị input2
@@ -14,7 +17,13 @@
   <br>
 
   <strong>input1
-  <input type = "text" [value]="input1">
+    <input type="text" [value]="input1">
+    <div>iput2</div>
+    <input (keyup)="onKey($event)">
+    {{input2.valueOf()}}<!--
+    <input type = "text" (change) = "updateValue($event)">
+    <input type = "text" #lable1 (change)="updateValue1(lable1.value)">
+-->
   </strong>
 
 </div>
