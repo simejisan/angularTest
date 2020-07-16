@@ -11,6 +11,7 @@ describe('TimeServiceService', () => {
   });
 
   it('should be created', () => {
+    const service: TimeServiceService = TestBed.get(TimeServiceService);
     expect(service).toBeTruthy();
   });
 });

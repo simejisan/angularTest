@@ -8,8 +8,8 @@ import {Component, OnInit} from '@angular/core';
 export class EventHandleComponent implements OnInit {
   input1: string = 'input 1';
   input2: string = '';
-  clickMessage = '';
   isCollapsed: boolean = false;
+  clickMessage = '';
 
   constructor() {
   }
@@ -18,20 +18,23 @@ export class EventHandleComponent implements OnInit {
     this.isCollapsed = !this.isCollapsed;
   }
 
-  onKey(event: KeyboardEvent) {
+  /*  onKey(event: KeyboardEvent) {
 
-    this.input2 += event.target;
-  }
+      this.input2 += event.target;
+    }*/
 
   onClickMe() {
     this.clickMessage = 'Savior';
   }
- /* updateValue(event: Event){
-    this.label = event.target.value;
+
+  /*  onTyping(name: string){
+      this.name = name;
+      console.log (name);
+    }*/
+  updateValue(event) {
+    this.input2 = event.target.value;
   }
-  updateValue1(value: any){
-    this.label = value;
-  }*/
+
   ngOnInit(): void {
   }
 
