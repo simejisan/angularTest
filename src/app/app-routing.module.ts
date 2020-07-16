@@ -6,6 +6,8 @@ import {NgModelComponent} from './components/ng-model/ng-model.component';
 import {DirectivesComponent} from './components/directives/directives.component';
 import {EventHandleComponent} from './components/event-handle/event-handle.component';
 import {ServicesComponent} from './components/services/services.component';
+import {InputComponent} from './components/input/input.component';
+import {OutputComponent} from './components/output/output.component';
 
 const routes: Routes = [
   {
@@ -31,6 +33,14 @@ const routes: Routes = [
   {
     path: 'services',
     component: ServicesComponent
+  },
+  {
+    path: 'input',
+    component: InputComponent
+  },
+  {
+    path: 'output',
+    component: OutputComponent
   },
   /*{
     path: '', redirectTo: '/first-component',

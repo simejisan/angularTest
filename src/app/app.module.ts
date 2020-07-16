@@ -10,6 +10,10 @@ import {FormsModule} from '@angular/forms';
 import { DirectivesComponent } from './components/directives/directives.component';
 import { EventHandleComponent } from './components/event-handle/event-handle.component';
 import { ServicesComponent } from './components/services/services.component';
+import { InputComponent } from './components/input/input.component';
+import { OutputComponent } from './components/output/output.component';
+import { InputSComponent } from './components/input-s/input-s.component';
+import { OutputSComponent } from './components/output-s/output-s.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,11 @@ import { ServicesComponent } from './components/services/services.component';
     NgModelComponent,
     DirectivesComponent,
     EventHandleComponent,
-    ServicesComponent
+    ServicesComponent,
+    InputComponent,
+    OutputComponent,
+    InputSComponent,
+    OutputSComponent
   ],
   imports: [
     BrowserModule,
